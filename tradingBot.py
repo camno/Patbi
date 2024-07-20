@@ -1,5 +1,5 @@
 import asyncio 
-from ib_insync import IB, util, Contract, MarketOrder
+from ib_insync import IB, util
 
 
 class TradingBot:
@@ -44,8 +44,7 @@ class TradingBot:
         await self.place_order(contract, order)
 
     
-    # def onBarUpdate(bars, hasNewBar):
-    #     print(bars[-1])
+
 
     def stop(self):
         self.ib.disconnect()

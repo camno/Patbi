@@ -11,6 +11,5 @@ async def main():
     order = MarketOrder('BUY', 100)
     await bot.trade(contract, order)
 
-
 if __name__ == "__main__":
     asyncio.run(main())

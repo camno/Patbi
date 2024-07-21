@@ -3,7 +3,7 @@ from ib_insync import IB, util, Contract, MarketOrder
 from tradingBot import *
 
 
-async def main():
+async def main(ticker_name):
     bot = TradingBot()
     await bot.connect()
 
